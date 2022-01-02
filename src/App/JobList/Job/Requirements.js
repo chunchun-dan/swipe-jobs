@@ -8,7 +8,7 @@ const Requirements = ({requirements}: Props) => {
   return(
     <div>
       <div>
-        {'tool icon'}
+        <i className="fas fa-tools"></i>
       </div>
       <div>
         <div>

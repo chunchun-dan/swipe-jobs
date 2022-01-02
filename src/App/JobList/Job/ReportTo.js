@@ -12,7 +12,7 @@ const ReportTo = ({
   return(
     <div>
       <div>
-        {'avatar icon'}
+        <i className="fas fa-user-circle"></i>
       </div>
       <div>
         <div>

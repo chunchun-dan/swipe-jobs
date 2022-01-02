@@ -12,7 +12,7 @@ const Location = ({
   return(
     <div>
       <div>
-        {'location icon'}
+        <i className="fas fa-map-marker-alt"></i>
       </div>
       <div>
         <div>

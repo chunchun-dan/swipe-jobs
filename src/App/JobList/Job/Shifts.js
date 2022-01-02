@@ -13,7 +13,7 @@ const Shifts = ({
   return(
     <div>
       <div>
-        {'calender icon'}
+      <i className="fas fa-calendar-alt"></i>
       </div>
       <div>
         {'Shift Dates'}
