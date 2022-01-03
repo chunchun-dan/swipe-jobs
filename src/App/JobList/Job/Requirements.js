@@ -1,10 +1,11 @@
+// @flow
 import * as React from 'react';
 
 type Props = {
   requirements: Array<string>,
 };
 
-const Requirements = ({requirements}: Props) => {
+const Requirements = ({requirements}: Props): React.Node => {
   return(
     <div>
       <div>

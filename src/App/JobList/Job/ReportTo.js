@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 const ReportTo = ({
   name,
   phone,
-}: Props) => {
+}: Props): React.Node => {
   return(
     <div>
       <div>

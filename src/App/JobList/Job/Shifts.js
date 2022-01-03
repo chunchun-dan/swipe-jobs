@@ -1,6 +1,8 @@
+// @flow
 import * as React from 'react';
 
 type Props = {
+  jobId: string,
   shifts: Array<{
     startDate: string,
     endDate: string,
@@ -9,7 +11,7 @@ type Props = {
 const Shifts = ({
   jobId,
   shifts,
-}: Props) => {
+}: Props): React.Node => {
   return(
     <div>
       <div>

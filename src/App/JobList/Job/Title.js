@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 
 type Props = {
@@ -10,7 +11,7 @@ const Title = ({
   imageUrl,
   name,
   companyName
-}: Props) => {
+}: Props): React.Node => {
   return(
     <div>
         <img src={imageUrl} alt="job title"/>

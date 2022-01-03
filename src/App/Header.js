@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 
 type Props = {
@@ -8,7 +9,7 @@ type Props = {
 const Header = ({
   firstName,
   lastName
-}: Props) => {
+}: Props): React.Node => {
   const styles = {
     header: {
       backgroundColor: 'black',

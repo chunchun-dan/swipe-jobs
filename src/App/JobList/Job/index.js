@@ -59,8 +59,10 @@ const Job = ({ job, workerId }: Props) => {
       <Location address={company.address.formattedAddress} distance={milesToTravel}/>
       {requirements && <Requirements requirements={requirements}/>}
       <ReportTo name={company.reportTo.name} phone={company.reportTo.phone}/>
-      <button onClick={() => rejectJob(workerId, jobId)}>{'No Thanks'}</button>
-      <button onClick={() => acceptJob(workerId, jobId)}>{'I\'ll Take it'}</button>
+      <div>
+        <button onClick={() => rejectJob(workerId, jobId)}>{'No Thanks'}</button>
+        <button onClick={() => acceptJob(workerId, jobId)}>{'I\'ll Take it'}</button>
+      </div>
     </div>
   )
 }

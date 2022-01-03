@@ -1,14 +1,15 @@
+// @flow
 import * as React from 'react';
 
 type Props = {
   distance: string,
-  hourlyRate: float,
+  hourlyRate: number,
 };
 
 const Info = ({
   distance,
   hourlyRate
-}: Props) => {
+}: Props): React.Node => {
   return(
     <div>
         <div>

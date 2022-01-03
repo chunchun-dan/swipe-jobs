@@ -1,3 +1,4 @@
+// @flow
 import * as React from 'react';
 import Job from './Job';
 
@@ -19,8 +20,8 @@ type Props = {
         phone: string,
       },
     },
-    wagePerHourInCents: float,
-    milesToTravel: float,
+    wagePerHourInCents: number,
+    milesToTravel: number,
     shifts: Array<{
       startDate: string,
       endDate: string,
@@ -31,7 +32,7 @@ type Props = {
   workerId: string,
 };
 
-const JobList = ({ jobs, workerId }: Props) => {
+const JobList = ({ jobs, workerId }: Props): React.Node => {
   return(
     <div>
     {jobs.map((o) => {
