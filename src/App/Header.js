@@ -17,6 +17,7 @@ const Header = ({
       color: 'white',
       display: 'flex',
       justifyContent: 'space-between',
+      alignItems: 'baseline',
     },
     item: {
       marginLeft: '20px',
@@ -26,12 +27,12 @@ const Header = ({
 
   return(
     <div className={css(styles.header)}>
-      <h1 className={css(styles.item)}>
+      <h2 className={css(styles.item)}>
         {'swipejobs'}
-      </h1>
-      <h1 className={css(styles.item)}>
+      </h2>
+      <div className={css(styles.item)}>
         {`${firstName} ${lastName}`}
-      </h1>
+      </div>
     </div>
   )
 }

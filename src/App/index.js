@@ -4,6 +4,7 @@ import Header from './Header';
 import JobList from './JobList';
 import getJobs from './components/getJobs';
 import getWorker from './components/getWorker';
+import { StyleSheet, css } from 'aphrodite';
 
 const App = (): React.Node => {
   const [worker, setWorker] = React.useState({});
@@ -22,10 +23,25 @@ const App = (): React.Node => {
     });
   }, []);
 
+  const styles = StyleSheet.create({
+    container: {
+      display: 'flex',
+      justifyContent: 'center',
+    },
+    list: {
+      backgroundColor: 'lightgrey',
+      padding: '12px',
+    }
+  })
+
   return(
-    <div>
-      <Header firstName={worker.firstName} lastName={worker.lastName}/>
-      <JobList jobs={jobs} workerId={workerId}/>
+    <div className={css(styles.container)}>
+      <div>
+        <Header firstName={worker.firstName} lastName={worker.lastName}/>
+        <div className={css(styles.list)}>
+          <JobList jobs={jobs} workerId={workerId}/>
+        </div>
+      </div>
     </div>
   );
 }
