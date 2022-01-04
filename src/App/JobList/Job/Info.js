@@ -1,5 +1,6 @@
 // @flow
 import * as React from 'react';
+import { StyleSheet, css } from 'aphrodite';
 
 type Props = {
   distance: string,
@@ -10,22 +11,46 @@ const Info = ({
   distance,
   hourlyRate
 }: Props): React.Node => {
+  const styles = StyleSheet.create({
+    container: {
+      backgroundColor: '#66CDAA',
+      display: 'flex',
+      justifyContent: 'space-between',
+      padding: '8px 12px 4px 12px',
+      alignItems: 'center'
+    },
+    label: {
+      fontSize: '12px',
+      fontWeight: 'bold',
+    },
+    description: {
+      fontSize: '24px',
+      fontWeight: 'bold',
+      color: 'white',
+    },
+    dollarSign: {
+      verticalAlign: 'super',
+      fontSize: '12px',
+      marginRight: '2px',
+    }
+  });
+
   return(
-    <div>
+    <div className={css(styles.container)}>
         <div>
-          <div>
+          <div className={css(styles.label)}>
             {'Distance'}
           </div>
-          <div>
+          <div className={css(styles.description)}>
             {`${distance} miles`}
           </div>
         </div>
         <div>
-          <div>
-            {'hourly Rate'}
+          <div className={css(styles.label)}>
+            {'Hourly Rate'}
           </div>
-          <div>
-            {`$${hourlyRate}`}
+          <div className={css(styles.description)}>
+            <span className={css(styles.dollarSign)}>{'$'}</span>{`${hourlyRate}`}
           </div>
         </div>
       </div>

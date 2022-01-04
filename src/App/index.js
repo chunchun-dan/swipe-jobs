@@ -27,6 +27,7 @@ const App = (): React.Node => {
     container: {
       display: 'flex',
       justifyContent: 'center',
+      fontFamily: 'Helvetica, sans-serif'
     },
     list: {
       backgroundColor: 'lightgrey',
