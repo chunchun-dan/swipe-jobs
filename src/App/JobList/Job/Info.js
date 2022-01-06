@@ -16,12 +16,13 @@ const Info = ({
       backgroundColor: '#66CDAA',
       display: 'flex',
       justifyContent: 'space-between',
-      padding: '8px 12px 4px 12px',
+      padding: '16px 16px 16px 16px',
       alignItems: 'center'
     },
     label: {
       fontSize: '12px',
       fontWeight: 'bold',
+      marginBottom: '4px'
     },
     description: {
       fontSize: '24px',
