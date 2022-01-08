@@ -18,7 +18,7 @@ const Location = ({
       alignItems: 'center',
     },
     icon: {
-      fontSize: '20px',
+      fontSize: '24px',
       margin: '0 24px 0 24px'
     },
     label: {

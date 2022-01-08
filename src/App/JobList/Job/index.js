@@ -58,6 +58,29 @@ const Job = ({ job, workerId }: Props) => {
       borderTop: '1px solid lightgrey',
       margin: '16px 24px 8px 24px',
     },
+    buttons: {
+      margin: '16px 24px 16px 24px',
+      display: 'flex',
+      justifyContent: 'space-between',
+    },
+    buttonYes: {
+      width: '160px',
+      height: '50px',
+      fontSize: '20px',
+      background: 'black',
+      color: 'white',
+      borderRadius: '4px',
+      border: '1px solid black'
+    },
+    buttonNo: {
+      width: '160px',
+      height: '50px',
+      fontSize: '20px',
+      background: 'white',
+      color: '#ccc',
+      borderRadius: '4px',
+      border: '1px solid #ccc',
+    }
   })
 
   return(
@@ -75,9 +98,9 @@ const Job = ({ job, workerId }: Props) => {
         </>
         )}
       <ReportTo name={company.reportTo.name} phone={company.reportTo.phone}/>
-      <div>
-        <button onClick={() => rejectJob(workerId, jobId)}>{'No Thanks'}</button>
-        <button onClick={() => acceptJob(workerId, jobId)}>{'I\'ll Take it'}</button>
+      <div className={css(styles.buttons)}>
+        <button className={css(styles.buttonNo)} onClick={() => rejectJob(workerId, jobId)}>{'No Thanks'}</button>
+        <button className={css(styles.buttonYes)} onClick={() => acceptJob(workerId, jobId)}>{'I\'ll Take it'}</button>
       </div>
     </div>
   )
