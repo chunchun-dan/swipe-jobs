@@ -68,7 +68,12 @@ const Job = ({ job, workerId }: Props) => {
       <div className={css(styles.lineBreaker)}></div>
       <Location address={company.address.formattedAddress} distance={milesToTravel}/>
       <div className={css(styles.lineBreaker)}></div>
-      {requirements && <Requirements requirements={requirements}/>}
+      {requirements && (
+        <>
+          <Requirements requirements={requirements}/>
+          <div className={css(styles.lineBreaker)}></div>
+        </>
+        )}
       <ReportTo name={company.reportTo.name} phone={company.reportTo.phone}/>
       <div>
         <button onClick={() => rejectJob(workerId, jobId)}>{'No Thanks'}</button>
