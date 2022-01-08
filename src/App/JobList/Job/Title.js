@@ -24,11 +24,14 @@ const Title = ({
     company: {
       fontSize: '16px',
     },
+    image: {
+      width: '100%',
+    }
   });
 
   return(
     <div>
-        <img src={imageUrl} alt="job title"/>
+        <img className={css(styles.image)} src={imageUrl} alt="job title"/>
         <div className={css(styles.descContainer)}>
           <div className={css(styles.description)}>
             {name}
