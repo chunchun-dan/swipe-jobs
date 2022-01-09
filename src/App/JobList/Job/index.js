@@ -99,8 +99,8 @@ const Job = ({ job, workerId }: Props) => {
         )}
       <ReportTo name={company.reportTo.name} phone={company.reportTo.phone}/>
       <div className={css(styles.buttons)}>
-        <button className={css(styles.buttonNo)} onClick={() => rejectJob(workerId, jobId)}>{'No Thanks'}</button>
-        <button className={css(styles.buttonYes)} onClick={() => acceptJob(workerId, jobId)}>{'I\'ll Take it'}</button>
+        <button className={css(styles.buttonNo)} onClick={() => rejectJob({workerId, jobId})}>{'No Thanks'}</button>
+        <button className={css(styles.buttonYes)} onClick={() => acceptJob({workerId, jobId})}>{'I\'ll Take it'}</button>
       </div>
     </div>
   )
