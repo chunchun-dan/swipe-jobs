@@ -20,7 +20,7 @@ const Shifts = ({
       alignItems: 'center',
     },
     icon: {
-      fontSize: '24px',
+      fontSize: '20px',
       margin: '0 24px 0 24px'
     },
     label: {
