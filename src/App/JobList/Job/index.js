@@ -64,7 +64,7 @@ const Job = ({ job, workerId }: Props) => {
         <button onClick={() => acceptJob(workerId, jobId)}>{'I\'ll Take it'}</button>
       </div>
     </div>
-  )
+  );
 }
 
 export default Job;
